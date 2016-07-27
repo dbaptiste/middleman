@@ -1,0 +1,37 @@
+= partial :easter
+
+%meta{charset: "utf-8"}
+
+%title= page_title
+
+-# Meta
+%meta{name: "description", content: page_description}
+%meta{name: "keywords", content: page_keywords}
+%meta{name: "author", content: page_author}
+%meta{name: "generator", content: "Middleman #{Middleman::VERSION}"}
+%meta{name: "viewport", content: "width=device-width, initial-scale=1.0"}
+
+-# Twitter Card
+%meta{name: "twitter:card", content: "summary"}
+%meta{name: "twitter:site", content: data.settings.contact.twitter}
+%meta{name: "twitter:creator", content: data.settings.contact.twitter}
+%meta{name: "twitter:title", content: page_title}
+%meta{name: "twitter:description", content: page_description}
+
+-# Open Graph
+%meta{property: "og:title", content: page_title}
+%meta{property: "og:description", content: page_description}
+%meta{property: "og:image", content: page_image}
+
+-# Icons
+%link{href: "/assets/images/apple-touch-icon-144x144.png", rel: "apple-touch-icon", sizes: "144x144"}
+%link{href: "/assets/images/apple-touch-icon-114x114.png", rel: "apple-touch-icon", sizes: "114x114"}
+%link{href: "/assets/images/apple-touch-icon-72x72.png", rel: "apple-touch-icon", sizes: "72x72"}
+%link{href: "/assets/images/apple-touch-icon.png", rel: "apple-touch-icon"}
+%link{href: "/favicon.png", rel: "shortcut icon"}
+
+-# Feed
+= feed_tag :atom, "/feed.xml", title: "Articles - David Anguita"
+
+-# Stylesheets
+= stylesheet_link_tag "application"

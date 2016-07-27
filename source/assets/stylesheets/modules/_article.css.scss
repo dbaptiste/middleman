@@ -1,0 +1,50 @@
+$block: '.article';
+
+#{$block} {
+  img {
+    border: 1px solid $color-grey--light;
+    border-radius: 5px;
+  }
+}
+
+#{$block}__heading {
+  text-align: center;
+}
+
+#{$block}__tagline {
+  color: $color-grey;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 300;
+  width: 100%;
+}
+
+#{$block}__meta {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  color: $color-grey;
+  text-align: center;
+  font-size: 1rem;
+}
+
+#{$block}__meta--date {
+  display: block;
+}
+
+#{$block}__meta--tags {
+  display: block;
+}
+
+#{$block}__comments {
+  margin-top: 20px;
+}
+
+#{$block}__archive {
+  text-align: center;
+  margin-top: 30px;
+
+  a {
+    @extend .button;
+    @extend .button--small;
+  }
+}

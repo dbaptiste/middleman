@@ -1,0 +1,12 @@
+%header.header
+  .container
+    .header__home
+      .page__header
+        %h2.page__heading
+          = link_to home_path do
+            &larr;
+            = I18n.t('home.heading')
+
+    - unless is_blog_article?
+      .header__nav
+        = draw_page_nav

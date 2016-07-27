@@ -1,0 +1,54 @@
+---
+en:
+  site:
+    title: 'David Anguita. Freelance Ruby on Rails Developer and Consultant'
+    description: "Hi, I'm a freelance Ruby on Rails developer and consultant based in Spain"
+    keywords: 'Ruby, Rails, Ruby on Rails, Freelance, Ruby Freelance Developer, Rails Freelance Developer, Web development, Software consulting'
+    author: 'David Anguita'
+
+  layout:
+    services: Services
+    methodology: Methodology
+    contact: Contact me
+    about-site: About this site
+    projects: Recent work
+    archive: Archive
+    now: What I'm doing now
+    http-not-found: 'Oops! 404 Not Found'
+
+  footer:
+    source-code-on: Source code on
+
+  home:
+    heading: Hi, I'm David Anguita
+    tagline: I'm a freelance software developer and consultant specialized in Ruby on Rails
+    services-label: Services
+    methodology-label: Methodology
+    projects-label: Recent work
+
+  contact:
+    contact-methods: Alternative contact methods
+    pair-with-me: I like pair programming
+    schedule-meeting: Schedule time with me
+
+  clients:
+    heading: Clients I've recently worked with
+
+  projects:
+    take-a-look: Take a look at this selection of projects I am involved in, in no particular order
+    all-projects: All projects
+    view-online: View online
+    role: Role
+    features: Features
+    client: Client
+    company: Company
+    source-code: Source code
+
+  articles:
+    heading: Articles
+    latest: Latest articles
+    archive: Articles archive
+
+  common:
+    next_page: Next page
+    previous_page: Previous page

@@ -1,0 +1,36 @@
+$block: '.footer';
+
+#{$block} {
+  border-top: 1px solid $color-grey--light;
+  padding: 20px 0;
+  font-size: .9rem;
+  text-align: center;
+
+  a {
+    color: $color-grey;
+
+    &:hover {
+      color: $color-green;
+    }
+  }
+}
+
+#{$block}__credits {
+}
+
+#{$block}__about {
+  margin-top: 20px;
+}
+
+@include mq-large {
+  #{$block}__credits {
+    float: left;
+    text-align: left;
+  }
+
+  #{$block}__about {
+    float: right;
+    text-align: right;
+    margin: 0;
+  }
+}

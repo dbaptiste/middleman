@@ -1,0 +1,26 @@
+---
+priority: 1.0
+---
+
+%section.home.container
+  .home__introduction
+    .page__header
+      = link_to my_gravatar, 'index.html', class: 'avatar-wrapper'
+      %h1.page__heading= I18n.t("home.heading")
+      %p.page__tagline= I18n.t("home.tagline")
+
+  .home__services
+    - site_pages.each do |page|
+      .services__item
+        = link_to I18n.t("home.#{page}-label"), path_for(page), class: 'button services__link'
+
+  .home__contact
+    = partial :contact_methods
+
+  .home__clients
+    .clients--title= I18n.t("clients.heading")
+    = partial :clients
+
+  .home__latest-articles
+    .latest-articles--title= I18n.t("articles.latest")
+    = partial :latest_articles, locals: { limit: 5 }
